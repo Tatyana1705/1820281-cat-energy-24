@@ -18,14 +18,14 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--active">
+        <li class="main-nav__item">
           <a class="main-nav__link" href="#">главная</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">каталог продукции</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">подбор программы</a>
+          <a class="main-nav__link main-nav__item--active" href="#">подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -34,50 +34,42 @@
   <main class="page-main">
 
     <section class="application">
-      <h2 class="application__title">Подбор программы</h2>
+      <h1 class="application__title">Подбор программы</h1>
       <p class="application__text">Заполните анкету, и&nbsp;мы&nbsp;подберем программу питания для вашего кота</p>
-
       <form class="profile-form" action="https://echo.htmlacademy.ru" method="post">
-
         <ul class="profile-form__list">
           <li class="profile-form__item form-input">
             <label class="form-input__label" for="name">ИМЯ:*</label>
-            <div class="form-input__wrapper">
-              <input class="form-input__input" type="text" id="name" name="name" placeholder="барсик" required>
-            </div>
+            <input class="form-input__input" type="text" id="name" name="name" placeholder="барсик" required>
           </li>
           <li class="profile-form__item form-input">
             <label class="form-input__label" for="weight">Вес (кг):*</label>
-            <div class="form-input__wrapper">
-              <input class="form-input__input" type="number" id="weight" name="weight" placeholder="7" required>
-            </div>
+            <input class="form-input__input" type="number" id="weight" name="weight" placeholder="7" required>
           </li>
           <li class="profile-form__item form-input">
             <label class="form-input__label" for="age">Возраст (лет):</label>
-            <div class="form-input__wrapper">
-              <input class="form-input__input" type="number" id="age" name="age" placeholder="7">
-            </div>
+            <input class="form-input__input" type="number" id="age" name="age" placeholder="7">
           </li>
         </ul>
 
         <ul class="profile-form__list">
           <li class="profile-form__item control-radio">
             <label class="control-radio__label">
-              <input class="visually-hidden" type="radio" name="slim" value="slim">
+              <input class="visually-hidden" type="radio" name="diet" value="slim">
               <span class="control-radio__mark"></span>
               <span class="control-radio__text">похудение</span>
             </label>
           </li>
           <li class="profile-form__item control-radio">
             <label class="control-radio__label">
-              <input class="visually-hidden" type="radio" name="fat" value="fat">
+              <input class="visually-hidden" type="radio" name="diet" value="fat">
               <span class="control-radio__mark"></span>
               <span class="control-radio__text">Набор массы</span>
             </label>
           </li>
           <li class="profile-form__item control-radio">
             <label class="control-radio__label">
-              <input class="visually-hidden" type="radio" name="unknown" value="unknown">
+              <input class="visually-hidden" type="radio" name="diet" value="unknown">
               <span class="control-radio__mark"></span>
               <span class="control-radio__text">Не знаю (Нужен ваш совет)</span>
             </label>
