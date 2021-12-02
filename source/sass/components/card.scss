@@ -1,0 +1,22 @@
+.card {
+  padding: 13px 0 19px 0;
+  border-bottom: $border-style-other;
+}
+
+.card__name {
+  @include default-title;
+  margin-bottom: 13px;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: rgba(34, 34, 34, 1);
+}
+
+.card__info {
+  margin: 0 0 15px 0;
+  line-height: 14px;
+}
+
+.card__info dd {
+  margin: 0;
+}

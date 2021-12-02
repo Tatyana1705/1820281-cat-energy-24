@@ -1,0 +1,21 @@
+.addition {
+  @include default-fieldset;
+  margin-bottom: 21px;
+}
+
+.addition__title {
+  @include default-title;
+  margin-bottom: 34px;
+  padding: 0 20px;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.addition__list {
+  @include list-reset;
+  padding: 0 20px;
+}
+
+.addition__item {
+  margin-bottom: 13px;
+}

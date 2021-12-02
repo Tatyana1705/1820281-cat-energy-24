@@ -1,0 +1,12 @@
+.form-input {
+  margin-bottom: 14px;
+}
+
+.form-input__label {
+  @include default-text-form;
+  margin-right: 12px;
+}
+
+.form-input__input {
+  @include default-form-input;
+}

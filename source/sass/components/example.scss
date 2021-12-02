@@ -1,0 +1,65 @@
+.example {
+  background-color: rgba(234, 234, 234, 1);
+  padding: 25px 0 40px 0;
+}
+
+.example__title {
+  @include default-title;
+  margin-bottom: 40px;
+}
+
+.example__text {
+  margin: 0 0 20px 0;
+}
+
+.example__info {
+  margin-bottom: 40px;
+}
+
+.example__count-item {
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.example__count-item dt {
+  @include default-title;
+  padding: 15px 0;
+  font-size: 24px;
+  line-height: 24px;
+  border: 1px solid rgba(205, 205, 205, 1);
+  border-radius: 3px;
+}
+
+.example__count-item dd {
+  margin: 0;
+  font-size: 12px;
+  line-height: 12px;
+  background-color: rgba(234, 234, 234, 1);
+}
+
+.example__money {
+  text-align: center;
+}
+
+.example__money-item {
+  @include default-title;
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example__money-item dd {
+  margin: 0;
+}
+
+.compare__pictures {
+  margin-bottom: 15px;
+}
+
+.compare__scale {
+  @include default-title;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

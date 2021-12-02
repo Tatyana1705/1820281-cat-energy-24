@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff") format("woff"),
+    url("../fonts/oswaldmedium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff") format("woff"),
+    url("../fonts/oswaldregular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 10px 0 22px 0;
+  padding: 0;
+  min-height: 100%;
+  min-width: 320px;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.wrapper {
+  margin: 0 20px;
+}
+
+.button {
+  @include button-reset;
+  @include link-reset;
+  display: block;
+  padding: 10px 0;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  background-color: $base-green;
+}

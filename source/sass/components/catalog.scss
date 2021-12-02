@@ -1,0 +1,13 @@
+.catalog {
+  border-top: 1px solid rgba(217, 217, 217, 1);
+}
+
+.catalog__title {
+  @include default-title;
+  padding: 27px 20px 41px 20px;
+  line-height: 36px;
+}
+
+.catalog__list {
+  @include list-reset;
+}

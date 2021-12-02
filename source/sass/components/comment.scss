@@ -1,0 +1,25 @@
+.comment {
+  @include default-fieldset;
+  margin-bottom: 22px;
+}
+
+.comment__title {
+  @include default-title;
+  margin-bottom: 37px;
+  padding: 0 20px;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.comment__textarea {
+  display: block;
+  padding: 0 20px;
+}
+
+.comment__textarea textarea {
+  @include default-form-input;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  width: 100%;
+  height: 150px;
+}

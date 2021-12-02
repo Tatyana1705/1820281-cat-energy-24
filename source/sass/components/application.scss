@@ -1,0 +1,19 @@
+.application {
+  border-top: 1px solid rgba(217, 217, 217, 1);
+}
+
+.application__title {
+  @include default-title;
+  margin-bottom: 10px;
+  padding: 27px 20px;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.application__text {
+  @include default-text-form;
+  margin-bottom: 39px;
+  padding: 0 20px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 1);
+}
