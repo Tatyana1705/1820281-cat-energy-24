@@ -1,1 +1,34 @@
-// Начните писать стили здесь
+
+//global
+@import "./global/fonts.scss";
+@import "./global/veriabless.scss";
+@import "./global/mixins.scss";
+@import "./global/global.scss";
+//components
+@import "./components/page-header.scss";
+@import "./components/main-nav.scss";
+@import "./components/promo.scss";
+@import "./components/program.scss";
+@import "./components/advantages.scss";
+@import "./components/example.scss";
+@import "./components/compare.scss";
+@import "./components/page-footer.scss";
+@import "./components/contacts.scss";
+@import "./components/logo-footer.scss";
+@import "./components/footer-social.scss";
+@import "./components/footer-academy.scss";
+@import "./components/catalog.scss";
+@import "./components/product.scss";
+@import "./components/other.scss";
+@import "./components/card.scss";
+@import "./components/present.scss";
+@import "./components/application.scss";
+@import "./components/programm-info.scss";
+@import "./components/form-input.scss";
+@import "./components/control-radio.scss";
+@import "./components/owner.scss";
+@import "./components/about-cat.scss";
+@import "./components/target.scss";
+@import "./components/comment.scss";
+@import "./components/addition.scss";
+@import "./components/checkbox-control.scss";

@@ -1,0 +1,70 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin default-title {
+  margin: 0;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $title-color;
+}
+
+@mixin button-reset {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+@mixin link-reset {
+  text-decoration: none;
+}
+
+@mixin default-link {
+  @include link-reset;
+  color: rgba(0, 0, 0, 1);
+}
+
+@mixin fieldset-reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin default-fieldset {
+  @include fieldset-reset;
+  border: none;
+  border-top: 2px solid rgba(104, 183, 56, 1);
+}
+
+@mixin text-form-reset {
+  margin: 0;
+}
+
+@mixin default-text-form {
+  @include text-form-reset;
+  font-family: $font-family;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba(68, 68, 68, 1);
+}
+
+@mixin form-input-reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+@mixin default-form-input {
+  @include form-input-reset;
+  @include default-text-form;
+  padding: 13px 15px;
+  border: 1px solid rgba(231, 231, 231, 1);
+
+  &::placeholder {
+    color: rgba(68, 68, 68, 1);
+  }
+}
