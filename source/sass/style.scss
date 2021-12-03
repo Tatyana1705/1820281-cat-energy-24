@@ -1,5 +1,6 @@
 
 //global
+@import "./global/fonts.scss";
 @import "./global/veriabless.scss";
 @import "./global/mixins.scss";
 @import "./global/global.scss";
@@ -10,6 +11,7 @@
 @import "./components/program.scss";
 @import "./components/advantages.scss";
 @import "./components/example.scss";
+@import "./components/compare.scss";
 @import "./components/page-footer.scss";
 @import "./components/contacts.scss";
 @import "./components/logo-footer.scss";

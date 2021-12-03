@@ -52,14 +52,3 @@
 .example__money-item dd {
   margin: 0;
 }
-
-.compare__pictures {
-  margin-bottom: 15px;
-}
-
-.compare__scale {
-  @include default-title;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
