@@ -3,5 +3,14 @@
 }
 
 .page-footer__info {
-  padding-top: 39px;
+  display: flex;
+  flex-direction: column;
+  padding: 39px 20px 22px 20px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 30px;
+  }
 }

@@ -9,10 +9,9 @@
 </head>
 
 <body>
-
-  <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo logo">
+  <header class="page-header wrapper">
+    <div class="page-header__logo">
+      <a class="logo">
         <img class="logo__icon" src="img/icon-mobile.svg" width="34" height="38" alt="Кот-супергерой.">
         <img class="logo__name" src="img/logo.svg" width="101" height="18" alt="Кот энерджи.">
       </a>
@@ -20,7 +19,7 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </div>
-    <nav class="main-nav">
+    <nav class="page-header__nav main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--active">
           <a class="main-nav__link">главная</a>
@@ -38,10 +37,14 @@
   <main class="page-main">
     <section class="promo">
       <div class="promo__conteiner wrapper">
-        <h1 class="promo__title">Функциональное питание для котов</h1>
-        <p class="promo__text">Занялся собой? Займись котом!</p>
-        <img class="promo__img" src="img/index-can-mobile.png" width="280" height="270" alt="Банка корма для кота.">
-        <a class="promo__button button" href="#">подобрать программу</a>
+        <div class="promo__content">
+          <h1 class="promo__title">Функциональное питание для котов</h1>
+          <p class="promo__text">Занялся собой? Займись котом!</p>
+          <a class="promo__button button" href="#">подобрать программу</a>
+          <div class="promo__img">
+            <img src="img/index-can-mobile.png" width="280" height="270" alt="Банка корма для кота.">
+          </div>
+        </div>
       </div>
     </section>
 
@@ -83,34 +86,40 @@
     </section>
 
     <section class="example">
-      <div class="example__conteiner wrapper">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм
-          на&nbsp;Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он&nbsp;не&nbsp;менял своих
-          привычек и&nbsp;по-прежнему спит по&nbsp;16&nbsp;часов в&nbsp;день.</p>
-        <div class="example__info">
-          <div class="example__count">
-            <dl class="example__count-item">
-              <dt>5 КГ</dt>
-              <dd>снижение веса</dd>
-            </dl>
-            <dl class="example__count-item">
-              <dt>60 ДНЕЙ</dt>
-              <dd>затрачено времени</dd>
-            </dl>
-          </div>
-          <div class="example__money">
-            <dl class="example__money-item">
-              <dt>Затраты на питание:</dt>
-              <dd>15 000 РУБ.</dd>
-            </dl>
+      <div class="example__wrapper wrapper">
+        <div class="example__conteiner">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__text">Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм
+            на&nbsp;Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он&nbsp;не&nbsp;менял своих
+            привычек и&nbsp;по-прежнему спит по&nbsp;16&nbsp;часов в&nbsp;день.</p>
+          <div class="example__info">
+            <div class="example__count">
+              <dl class="example__count-item">
+                <dt>5 КГ</dt>
+                <dd>снижение веса</dd>
+              </dl>
+              <dl class="example__count-item">
+                <dt>60 ДНЕЙ</dt>
+                <dd>затрачено времени</dd>
+              </dl>
+            </div>
+            <div class="example__money">
+              <dl class="example__money-item">
+                <dt>Затраты на питание:</dt>
+                <dd>15 000 РУБ.</dd>
+              </dl>
+            </div>
           </div>
         </div>
 
         <div class="example__range compare">
           <div class="compare__pictures">
-            <img class="compare__img" src="img/before-mobile.png" width="280" height="232" alt="Толстый кот.">
-            <img class="compare__img" src="img/cat-skinny.png" width="280" height="232" alt="Худой кот.">
+            <div class="compare__img compare__img--show compare__img--left">
+              <img src="img/before-mobile.png" width="280" height="232" alt="Толстый кот.">
+            </div>
+            <div class="compare__img compare__img--right">
+              <img class="compare__img" src="img/cat-skinny.png" width="280" height="232" alt="Худой кот.">
+            </div>
           </div>
           <div class="compare__scale">
             <span class="compare__position">было</span>
@@ -128,11 +137,14 @@
 
   <footer class="page-footer">
     <div class="page-footer__contacts contacts contacts--index-page">
-      <div class="contacts__container wrapper">
-        <h2 class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-        <address class="contacts__address">
-          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        </address>
+      <div class="contacts__wrapper wrapper">
+        <div class="contacts__container">
+          <h2 class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+          <address class="contacts__address">
+            <p class="contacts__text">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__text">Санкт-Петербург</p>
+          </address>
+        </div>
       </div>
       <div class="contacts__map"></div>
     </div>

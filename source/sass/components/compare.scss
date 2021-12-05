@@ -1,10 +1,86 @@
+.compare {
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 61px;
+    background-color: rgba(234, 234, 234, 1);
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
+}
+
 .compare__pictures {
+  display: block;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    width: 592px;
+    height: 511px;
+    margin: 0 auto 29px auto;
+  }
+}
+
+.compare__img {
+  display: none;
+
+  &--show {
+    display: block;
+  }
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+.compare__img--left {
+  @media (min-width: $tablet) {
+    left: 0;
+  }
+}
+
+.compare__img--right {
+  @media (min-width: $tablet) {
+    right: 0;
+    justify-content: flex-end;
+  }
+}
+
+.compare__img img {
+  display: block;
+  width: 100%;
+  height: fit-content;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    height: 100%;
+    width: fit-content;
+  }
 }
 
 .compare__scale {
   @include default-title;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 25px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin: 0 70px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
 }

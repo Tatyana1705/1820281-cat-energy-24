@@ -1,5 +1,37 @@
+.main-nav {
+  display: none;
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 10;
+
+  @media (min-width: $tablet) {
+    position: static;
+    top: 0;
+    display: block;
+    width: auto;
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
 .main-nav__list {
   @include list-reset;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop) {
+    width: 610px;
+    margin: 0 0 0 auto;
+  }
 }
 
 .main-nav__item {
@@ -11,8 +43,25 @@
   text-align: center;
   text-transform: uppercase;
   border-top: 1px solid rgba(230, 230, 230, 1);
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 35px;
+    padding: 10px 0;
+    border: none;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .main-nav__link {
   @include default-link;
+
+  @media (min-width: $desktop) {
+    color: rgba(255, 255, 255, 1);
+  }
 }

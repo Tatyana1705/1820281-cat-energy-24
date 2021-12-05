@@ -1,3 +1,15 @@
+.logo-footer {
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
+}
+
 .logo-footer__img {
   margin-bottom: 32px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }
