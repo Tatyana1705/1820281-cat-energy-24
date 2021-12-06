@@ -38,12 +38,12 @@
 .promo__conteiner {
   @media (min-width: $tablet) {
     position: relative;
-    height: 810px;
+    min-height: 810px;
   }
 
   @media (min-width: $desktop) {
     position: relative;
-    height: 585px;
+    min-height: 585px;
   }
 }
 
