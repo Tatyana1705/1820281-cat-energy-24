@@ -2,27 +2,92 @@
   padding: 19px 20px 25px 20px;
   border-top: $border-style-product;
 
+
   &--more {
     border-bottom: $border-style-product;
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 38px;
+    background-color: rgba(242, 242, 242, 1);
+    border: none;
+
+    &--more {
+      box-sizing: border-box;
+      background: none;
+      border: 2px solid rgba(242, 242, 242, 1);
+    }
+  }
+}
+
+.product__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet) {
+    display: block;
+    align-items: center;
+  }
+}
+
+.product__img {
+  flex-basis: 50%;
+  flex-shrink: 0;
+}
+
+.product__img img {
+  display: block;
+  height: fit-content;
+  margin: auto auto;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 34px;
   }
 }
 
 .product__info {
-  margin-bottom: 21px;
+  box-sizing: border-box;
+  flex-basis: 50%;
+  flex-shrink: 0;
 }
 
 .product__title {
   @include default-title;
+  width: 60%;
   margin-bottom: 14px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 
   &--more {
+    width: 100%;
     margin-bottom: 8px;
     padding-top: 78px;
     text-align: center;
     color: rgba(17, 17, 17, 1);
+  }
+
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+    padding-bottom: 21px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+
+    &--more {
+      width: 60%;
+      line-height: 22px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &--more {
+      width: 100%;
+    }
   }
 }
 
@@ -35,7 +100,15 @@
 }
 
 .product__item {
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 7px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid rgba(205, 205, 205, 1);
+  }
 }
 
 .product__item dt,
@@ -43,14 +116,32 @@
   margin: 0;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+  }
 }
 
 .product__text {
-  margin: 0;
+  margin: 0 0 21px 0;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
   color: rgba(68, 68, 68, 1);
+
+  @media (min-width: $tablet) {
+    &--more {
+      width: 50%;
+      margin: 0 auto;
+      line-height: 18px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &--more {
+      width: 100%;
+    }
+  }
 }
 
 .product__order {
@@ -67,5 +158,9 @@
     text-transform: uppercase;
     color: rgba(68, 68, 68, 1);
     background-color: $base-grey;
+  }
+
+  @media (min-width: $tablet) {
+    margin-top: auto;
   }
 }

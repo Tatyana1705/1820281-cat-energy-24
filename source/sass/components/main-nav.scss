@@ -11,7 +11,6 @@
 
   @media (min-width: $tablet) {
     position: static;
-    top: 0;
     display: block;
     width: auto;
     padding: 0;
@@ -63,5 +62,9 @@
 
   @media (min-width: $desktop) {
     color: rgba(255, 255, 255, 1);
+
+    &--color {
+      color: rgba(17, 17, 17, 1);
+    }
   }
 }

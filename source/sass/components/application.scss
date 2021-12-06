@@ -1,19 +1,49 @@
 .application {
   border-top: 1px solid rgba(217, 217, 217, 1);
+
+  @media (min-width: $tablet) {
+    border: none;
+  }
+}
+
+.application__content {
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 
 .application__title {
   @include default-title;
   margin-bottom: 10px;
-  padding: 27px 20px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet) {
+    padding-top: 30px;
+    padding-bottom: 64px;
+  }
 }
 
 .application__text {
   @include default-text-form;
   margin-bottom: 39px;
-  padding: 0 20px;
   font-size: 14px;
   color: rgba(0, 0, 0, 1);
+
+  @media (min-width: $tablet) {
+    width: 323px;
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

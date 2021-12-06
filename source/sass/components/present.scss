@@ -2,6 +2,15 @@
   min-height: 290px;
   margin-bottom: 35px;
   background-color: transparentize($base-green, 0.25);
+
+  @media (min-width: $tablet) {
+    min-height: 200px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 245px;
+    margin: 0;
+  }
 }
 
 .present__text {
@@ -12,4 +21,12 @@
   align-items: center;
   text-align: center;
   color: rgba(255, 255, 255, 1);
+
+  @media (min-width: $tablet) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: center;
+  }
 }

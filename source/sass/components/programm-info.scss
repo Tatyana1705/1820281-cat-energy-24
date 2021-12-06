@@ -1,10 +1,29 @@
 .programm-info {
   margin: 0 20px 32px 20px;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 61px;
+    align-items: center;
+    margin-bottom: 72px;
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto;
+    margin-bottom: 32px;
+    padding: 0;
+  }
 }
 
 .programm-info__button {
   width: 100%;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .programm-info__footnotes {
@@ -12,4 +31,8 @@
   text-align: center;
   line-height: 16px;
   color: rgba(0, 0, 0, 1);
+
+  @media (min-width: $tablet) {
+    text-align: left;
+  }
 }

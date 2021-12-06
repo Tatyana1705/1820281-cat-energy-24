@@ -1,12 +1,47 @@
 .form-input {
+  display: flex;
+  align-items: center;
   margin-bottom: 14px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .form-input__label {
   @include default-text-form;
+  width: fit-content;
   margin-right: 12px;
+
+  @media (min-width: $tablet) {
+    margin-right: 15px;
+  }
+}
+
+.form-input__wrapper {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+}
+
+.form-input__wrapper svg {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
 }
 
 .form-input__input {
   @include default-form-input;
+  flex-grow: 1;
+
+  @media (min-width: $desktop) {
+    padding: 10px 15px;
+  }
 }
