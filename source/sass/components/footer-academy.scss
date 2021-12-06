@@ -1,8 +1,15 @@
 .footer-academy {
   @include default-link;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-academy__text {
   font-size: 16px;
   color: rgba(68, 68, 68, 1);
+
+  @media (min-width: $tablet) {
+    margin-right: 22px;
+  }
 }

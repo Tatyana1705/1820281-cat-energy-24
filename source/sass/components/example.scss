@@ -1,24 +1,98 @@
 .example {
   background-color: rgba(234, 234, 234, 1);
   padding: 25px 0 40px 0;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 0;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0 71px 0;
+  }
+}
+
+.example__conteiner {
+  @media (min-width: $desktop) {
+    width: 436px;
+    padding-top: 45px;
+  }
 }
 
 .example__title {
   @include default-title;
   margin-bottom: 40px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 63px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
 }
 
 .example__text {
   margin: 0 0 20px 0;
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 54px 0;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 69px;
+    padding: 0;
+  }
 }
 
 .example__info {
   margin-bottom: 40px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 85px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.example__count {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet) {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 162px 162px;
+    gap: 42px;
+    width: 100%;
+    margin-bottom: 60px;
+  }
 }
 
 .example__count-item {
-  margin: 0 0 20px 0;
+  position: relative;
   text-align: center;
+  margin: 0;
 }
 
 .example__count-item dt {
@@ -28,27 +102,83 @@
   line-height: 24px;
   border: 1px solid rgba(205, 205, 205, 1);
   border-radius: 3px;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__count-item dd {
+  position: absolute;
+  top: 47px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 47%;
   margin: 0;
+  padding: 0 14px;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
   background-color: rgba(234, 234, 234, 1);
+
+  @media (min-width: $tablet) {
+    width: 80%;
+    top: 60px;
+    padding: 0 9px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 7px;
+    background-color: rgba(234, 234, 234, 1);
+  }
 }
 
 .example__money {
   text-align: center;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto 0 0;
+  }
 }
 
 .example__money-item {
   @include default-title;
+  display: flex;
+  justify-content: center;
   margin: 0;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+  }
 }
 
 .example__money-item dd {
   margin: 0;
+  padding-left: 3px;
+
+  @media (min-width: $tablet) {
+    margin-top: 9px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 0 63px;
+  }
 }
