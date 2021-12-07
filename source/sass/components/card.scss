@@ -1,6 +1,33 @@
 .card {
   padding: 13px 0 19px 0;
   border-bottom: $border-style-other;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 26px 38px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 0;
+  }
+}
+
+.card__wrapper {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    flex-grow: 1;
+    margin-right: 38px;
+  }
 }
 
 .card__name {
@@ -10,13 +37,44 @@
   line-height: 16px;
   text-transform: uppercase;
   color: rgba(34, 34, 34, 1);
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .card__info {
+  display: flex;
+  justify-content: space-between;
   margin: 0 0 15px 0;
   line-height: 14px;
+
+  @media (min-width: $tablet) {
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.card__info dt {
+  @media (min-width: $tablet) {
+    margin-right: 49px;
+  }
 }
 
 .card__info dd {
   margin: 0;
+}
+
+.card__order {
+  @media (min-width: $desktop) {
+    width: 244px;
+  }
 }

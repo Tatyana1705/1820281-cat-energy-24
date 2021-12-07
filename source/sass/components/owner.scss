@@ -1,18 +1,53 @@
 .owner {
   @include default-fieldset;
-  margin-bottom: 9px;
+  position: relative;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    position: static;
+    margin-bottom: 0;
+  }
+}
+
+.owner__container {
+  position: relative;
+  padding-top: 88px;
+  padding-bottom: 91px;
 }
 
 .owner__title {
-  @include default-title;
+  @include fieldest-title;
+  position: absolute;
+  top: -17px;
+  left: 0;
   width: 187px;
-  margin-bottom: 35px;
-  padding: 0 20px;
-  font-size: 24px;
-  line-height: 26px;
+  background-color: rgba(255, 255, 255, 1);
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    left: -45px;
+  }
 }
 
 .owner__list {
   @include list-reset;
-  padding: 0 20px;
+  padding: 70px 20px;
+  padding-bottom: 0;
+
+  @media (min-width: $tablet) {
+    padding: 88px 70px;
+  }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    padding: 0;
+  }
+}
+
+.owner__item {
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+  }
 }

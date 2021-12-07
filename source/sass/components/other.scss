@@ -1,17 +1,64 @@
 .other {
-  @include default-fieldset;
-  margin-bottom: 35px;
+  position: relative;
+  border-top: 2px solid rgba(104, 183, 56, 1);
+
+  @media (min-width: $tablet) {
+    position: static;
+  }
+}
+
+.other__container {
+  padding-top: 43px;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    padding-top: 92px;
+    padding-bottom: 76px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .other__title {
   @include default-title;
-  padding: 25px 20px 36px 20px;
+  position: absolute;
+  top: -17px;
+  left: 0;
+  width: fit-content;
+  box-sizing: border-box;
+  padding: 0 20px;
   font-size: 24px;
   line-height: 24px;
+  background-color: rgba(255, 255, 255, 1);
+
+  @media (min-width: $tablet) {
+    padding: 0 37px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .other__list {
   @include list-reset;
-  margin: 0 20px;
+  margin-bottom: 35px;
   border-top: $border-style-other;
+  border-bottom: $border-style-other;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 69px;
+    border: $border-style-other;
+  }
+
+  @media (min-width: $desktop) {
+    flex-grow: 1;
+    margin-bottom: 0;
+    margin-right: 80px;
+    border: none;
+    border-top: $border-style-other;
+    border-bottom: $border-style-other;
+  }
 }

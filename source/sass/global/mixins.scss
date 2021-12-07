@@ -44,6 +44,21 @@
   border-top: 2px solid rgba(104, 183, 56, 1);
 }
 
+@mixin fieldest-title {
+  @include default-title;
+  padding: 0 20px;
+  font-size: 24px;
+  line-height: 26px;
+
+  @media (min-width: $tablet) {
+    width: fit-content;
+    margin: 0 30px;
+    padding: 0 40px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
 @mixin text-form-reset {
   margin: 0;
 }
@@ -55,6 +70,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: rgba(68, 68, 68, 1);
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 @mixin form-input-reset {
