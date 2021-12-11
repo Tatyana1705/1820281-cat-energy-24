@@ -1,6 +1,7 @@
 //color
 $base-green: rgba(104, 183, 56, 1);
 $base-grey: rgba(242, 242, 242, 1);
+$hover-green: rgba(94, 170, 47, 1);
 $title-color: rgba(0, 0, 0, 1);
 //font
 $font-family: "Oswald", "Arial", sans-serif;
@@ -10,3 +11,4 @@ $border-style-other: 1px solid rgba(205, 205, 205, 1);
 //viewports
 $tablet: 768px;
 $desktop: 1280px;
+$mobile-only: 767px;

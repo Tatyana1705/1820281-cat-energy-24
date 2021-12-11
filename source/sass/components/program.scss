@@ -1,6 +1,6 @@
 .program {
   @media (min-width: $desktop) {
-    margin-bottom: 71px;
+    margin-bottom: 70px;
   }
 }
 
@@ -18,42 +18,132 @@
   display: flex;
   flex-direction: column;
   background-color: $base-grey;
-  margin-bottom: 20px;
-  padding: 20px 33px 0 20px;
+  margin-bottom: 22px;
+  padding: 20px;
+  padding-bottom: 0;
 
   @media (min-width: $tablet) {
+    position: relative;
     margin-bottom: 30px;
-    padding: 77px 316px 57px 52px;
+    padding: 77px 316px 59px 52px;
   }
 
   @media (min-width: $desktop) {
     margin-bottom: 0;
-    padding: 45px 51px 59px 52px;
+    padding: 82px 52px 59px 52px;
   }
 }
 
 .program__title {
   @include default-title;
-  margin-bottom: 22px;
-  padding-left: 69px;
+  position: relative;
+  margin-bottom: 18px;
+  padding: 11px 0 11px 71px;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
 
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    top: 3px;
+    left: 2px;
+    width: 50px;
+    height: 50px;
+    background-color: $base-green;
+    border-radius: 50%;
+  }
+
+  &--slim::after {
+    top: 0;
+    left: 9px;
+    width: 36px;
+    height: 50px;
+    background-image: url("../img/cat-slim.svg");
+  }
+
+  &--pro::after {
+    top: 15px;
+    left: -7px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/cat-pro.svg");
+  }
+
   @media (min-width: $tablet) {
-    padding-left: 0;
+    position: static;
+    margin-bottom: 23px;
+    padding: 0;
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      top: 50%;
+      transform: translateY(-48%);
+      left: auto;
+      right: 63px;
+      width: 200px;
+      height: 200px;
+    }
+
+    &--slim::after {
+      top: 50%;
+      transform: translateY(-55%);
+      left: auto;
+      right: 92px;
+      width: 140px;
+      height: 194px;
+      background-size: 100%;
+    }
+
+    &--pro::after {
+      top: 50%;
+      transform: translateY(-46%);
+      left: auto;
+      right: 28px;
+      width: 268px;
+      height: 112px;
+      background-size: 100%;
+    }
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 39px;
+    margin-bottom: 74px;
     padding-left: 162px;
+
+    &::before {
+      top: 100px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slim::after {
+      top: 100px;
+      left: 67px;
+      width: 70px;
+      height: 97px;
+      background-size: 100%;
+    }
+
+    &--pro::after {
+      top: 97px;
+      left: 32px;
+      width: 134px;
+      height: 56px;
+      background-size: 100%;
+    }
   }
 }
 
 .program__text {
-  margin: 0 0 23px 0;
+  margin: 0 0 20px 0;
 
   @media (min-width: $tablet) {
     margin-bottom: 52px;
@@ -66,8 +156,9 @@
 
 .program__link {
   @include default-link;
+  position: relative;
   display: block;
-  padding: 21px 0;
+  padding: 20px 0;
   font-family: $font-family;
   font-weight: 400;
   font-size: 16px;
@@ -76,11 +167,45 @@
   text-transform: uppercase;
   border-top: 1px solid rgba(217, 217, 217, 1);
 
+  &::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100px;
+    content: "";
+    display: block;
+    width: 24px;
+    height: 12px;
+    background-image: url("../img/icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    width: 32px;
+    height: 12px;
+    background-image: url("../img/icon_arrow.svg");
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:active::after {
+    width: 32px;
+    height: 12px;
+    background-image: url("../img/icon_arrow.svg");
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet) {
     padding: 0;
     font-size: 20px;
     line-height: 30px;
     border: none;
+
+    &::after {
+      left: 133px;
+    }
   }
 
   @media (min-width: $desktop) {

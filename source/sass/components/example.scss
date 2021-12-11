@@ -1,9 +1,18 @@
 .example {
   background-color: rgba(234, 234, 234, 1);
-  padding: 25px 0 40px 0;
+  padding: 25px 0 38px 0;
 
   @media (min-width: $tablet) {
+    padding: 43px 0;
     padding-bottom: 0;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, transparent 57%, rgba(234, 234, 234, 1) 57%, rgba(234, 234, 234, 1));
+    border-top: 1px solid rgba(230, 230, 230, 1);
+  }
+
+  @media (min-width: $desktop) {
+    background-image: linear-gradient(to bottom, transparent 35%, rgba(234, 234, 234, 1) 35%, rgba(234, 234, 234, 1));
+    border: none;
   }
 }
 
@@ -11,7 +20,7 @@
   @media (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
-    padding: 25px 0 71px 0;
+    padding: 25px 0 7px 0;
   }
 }
 
@@ -25,25 +34,22 @@
 .example__title {
   @include default-title;
   margin-bottom: 40px;
-  padding: 0 20px;
 
   @media (min-width: $tablet) {
     margin-bottom: 63px;
-    padding: 0 30px;
   }
 
   @media (min-width: $desktop) {
+    margin-bottom: 147px;
     padding: 0;
   }
 }
 
 .example__text {
   margin: 0 0 20px 0;
-  padding: 0 20px;
 
   @media (min-width: $tablet) {
-    margin: 0 0 54px 0;
-    padding: 0 30px;
+    margin: 0 0 55px 0;
   }
 
   @media (min-width: $desktop) {
@@ -54,13 +60,11 @@
 
 .example__info {
   margin-bottom: 40px;
-  padding: 0 20px;
 
   @media (min-width: $tablet) {
     display: flex;
     align-items: center;
     margin-bottom: 85px;
-    padding: 0 30px;
   }
 
   @media (min-width: $desktop) {
@@ -74,9 +78,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
-  margin-bottom: 34px;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet) {
+    grid-template-columns: repeat(2, 162px);
+    gap: 42px;
     width: 50%;
     margin-bottom: 0;
   }
@@ -85,7 +91,7 @@
     grid-template-columns: 162px 162px;
     gap: 42px;
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 62px;
   }
 }
 
@@ -97,13 +103,14 @@
 
 .example__count-item dt {
   @include default-title;
-  padding: 15px 0;
+  padding: 14px 0;
   font-size: 24px;
   line-height: 24px;
   border: 1px solid rgba(205, 205, 205, 1);
   border-radius: 3px;
 
   @media (min-width: $tablet) {
+    padding: 13px 0 17px 0;
     font-size: 30px;
     line-height: 37px;
   }
@@ -111,7 +118,7 @@
 
 .example__count-item dd {
   position: absolute;
-  top: 47px;
+  top: 46px;
   left: 50%;
   transform: translateX(-50%);
   width: 47%;
@@ -124,7 +131,7 @@
 
   @media (min-width: $tablet) {
     width: 80%;
-    top: 60px;
+    top: 62px;
     padding: 0 9px;
     font-size: 14px;
     line-height: 14px;
@@ -179,6 +186,6 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 0 0 0 63px;
+    margin: 0 0 0 60px;
   }
 }
