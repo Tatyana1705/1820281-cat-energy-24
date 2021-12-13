@@ -11,6 +11,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 56px 30px;
+    padding: 43px 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 37px 0;
   }
 }

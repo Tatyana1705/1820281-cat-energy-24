@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $tablet) {
-    padding-top: 60px;
+    padding-top: 53px;
     background-color: none;
   }
 
@@ -28,17 +28,19 @@
 
   @media (min-width: $tablet) {
     justify-content: space-between;
-    padding: 0 70px 56px 70px;
+    padding: 0 40px 56px 40px;
   }
 
   @media (min-width: $desktop) {
     position: absolute;
-    top: 95px;
+    justify-content: center;
+    top: 94px;
     left: 0;
     width: 565px;
     box-sizing: border-box;
-    padding: 56px 80px;
+    padding: 60px 80px;
     background-color: rgba(255, 255, 255, 1);
+    z-index: 10;
   }
 }
 
@@ -56,12 +58,15 @@
 
 .contacts__title {
   @include default-title;
+  margin-right: 3px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: rgba(17, 17, 17, 1);
 
   @media (min-width: $tablet) {
+    margin-top: 3px;
+    margin-right: 96px;
     font-size: 20px;
     line-height: 26px;
   }
@@ -89,4 +94,8 @@
 .contacts__map {
   height: 362px;
   background-color: rgb(204, 237, 250);
+
+  @media (min-width: $tablet) {
+    height: 400px;
+  }
 }

@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 22px;
-  padding: 25px 0;
+  padding: 19px 0;
   border-top: 1px solid rgba(217, 217, 217, 1);
   border-bottom: 1px solid rgba(217, 217, 217, 1);
 
@@ -15,5 +15,27 @@
 }
 
 .footer-social__item {
-  margin: 0 16px;
+  padding: 0 16px;
+}
+
+.footer-social__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23px;
+  height: 23px;
+
+  @media (min-width: $tablet) {
+    width: 33px;
+    height: 33px;
+  }
+}
+
+.footer-social__button:hover svg {
+  fill: $base-green;
+}
+
+.footer-social__button:active svg {
+  fill: $base-green;
+  opacity: 0.6;
 }

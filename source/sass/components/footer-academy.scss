@@ -5,6 +5,18 @@
   align-items: center;
 }
 
+.footer-academy:hover svg {
+  fill: $base-green;
+}
+
+.footer-academy:active svg {
+  fill: $base-green;
+}
+
+.footer-academy:active {
+  opacity: 0.3;
+}
+
 .footer-academy__text {
   font-size: 16px;
   color: rgba(68, 68, 68, 1);

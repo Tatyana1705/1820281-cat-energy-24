@@ -2,20 +2,21 @@
   margin-bottom: 50px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 43px;
+    margin-bottom: 14px;
+
     padding: 15px 30px 90px 30px;
-    border-bottom: 1px solid rgba(230, 230, 230, 1);
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 57px;
+    margin-bottom: 14px;
+    padding: 0;
     border: none;
   }
 }
 
 .advantages__title {
   @include default-title;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet) {
     margin-bottom: 72px;
@@ -28,33 +29,76 @@
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 132px 60px;
     counter-reset: section;
   }
 
   @media (min-width: $desktop) {
     grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
   }
 }
 
 .advantages__item {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
-  padding-left: 80px;
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: block;
+    top: -2px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background-color: $base-green;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--bio::before {
+    background-image: url("../img/icon_leaf.svg");
+  }
+
+  &--water::before {
+    background-image: url("../img/icon_tub.svg");
+  }
+
+  &--food::before {
+    background-image: url("../img/icon_eat.svg");
+  }
+
+  &--time::before {
+    background-image: url("../img/icon_alarm.svg");
+  }
 
   @media (min-width: $tablet) {
     position: relative;
+    flex-direction: column;
+    align-items: flex-start;
     margin-bottom: 0;
-    padding: 111px 100px 57px 0;
+    padding: 0;
 
     &::before {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 30px;
+    }
+
+    &::after {
       position: absolute;
       counter-increment: section;
       content: counter(section) "";
-      top: 0;
-      right: 90px;
+      width: 136px;
+      top: -37px;
+      right: 80px;
       font-family: $font-family;
       font-size: 280px;
       line-height: 280px;
+      text-align: center;
       color: rgba(242, 242, 242, 1);
       z-index: -1;
     }
@@ -70,9 +114,22 @@
     &::before {
       right: 0;
     }
+
+    &::after {
+      top: -37px;
+      right: 2px;
+    }
   }
 }
 
 .advantages__text {
   margin: 0;
+
+  @media (min-width: $tablet) {
+    width: 80%;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+  }
 }

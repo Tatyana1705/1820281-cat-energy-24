@@ -61,6 +61,15 @@ body {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
   background-color: $base-green;
+
+  &:hover {
+    background-color: $hover-green;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $hover-green;
+  }
 }
 
 .page-main {
