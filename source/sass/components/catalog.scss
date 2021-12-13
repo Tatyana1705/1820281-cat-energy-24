@@ -10,39 +10,41 @@
   @media (min-width: $desktop) {
     width: 1220px;
     margin: 0 auto;
+    margin-bottom: 101px;
   }
 }
 
 .catalog__title {
   @include default-title;
-  padding: 27px 20px 41px 20px;
+  padding: 28px 20px 41px 20px;
   line-height: 36px;
 
   @media (min-width: $tablet) {
-    padding: 27px 30px 41px 30px;
+    padding: 36px 30px 57px 30px;
   }
 
   @media (min-width: $desktop) {
-    padding: 100px 0;
+    padding: 23px 0 60px 0;
   }
 }
 
 .catalog__list {
   @include list-reset;
-  margin-bottom: 42px;
+  margin-bottom: 38px;
   border-bottom: 1px solid rgba(235, 235, 235, 1);
 
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
-    margin-bottom: 68px;
+    gap: 37px 60px;
+    margin-bottom: 91px;
     padding: 0 30px;
+    border: none;
   }
 
   @media (min-width: $desktop) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    gap: 40px 80px;
     padding: 0;
   }
 }

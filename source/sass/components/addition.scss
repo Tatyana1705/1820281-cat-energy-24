@@ -1,6 +1,7 @@
 .addition {
   @include default-fieldset;
   position: relative;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet) {
     position: static;
@@ -15,6 +16,13 @@
     padding-top: 68px;
     padding-bottom: 61px;
   }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 73px;
+    padding-bottom: 33px;
+  }
 }
 
 .addition__title {
@@ -24,20 +32,25 @@
   left: 0;
   background-color: rgba(255, 255, 255, 1);
 
+  @media (min-width: $tablet) {
+    top: -24px;
+  }
+
   @media (min-width: $desktop) {
     margin: 0;
-    left: -45px;
+    left: -40px;
   }
 }
 
 .addition__list {
   @include list-reset;
-  padding: 43px 20px 34px 20px;
+  padding: 48px 20px 0 20px;
 
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 69px 70px 22px 70px;
+    gap: 9px 59px;
+    padding: 74px 70px 26px 70px;
   }
 
   @media (min-width: $desktop) {
@@ -49,7 +62,8 @@
 }
 
 .addition__item {
-  margin-bottom: 13px;
+  position: relative;
+  margin-bottom: 22px;
 
   &:last-child {
     margin-bottom: 0;

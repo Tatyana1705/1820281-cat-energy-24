@@ -21,7 +21,6 @@
 @mixin button-reset {
   background-color: transparent;
   border: none;
-  outline: none;
 }
 
 @mixin link-reset {
@@ -86,7 +85,8 @@
 @mixin default-form-input {
   @include form-input-reset;
   @include default-text-form;
-  padding: 13px 15px;
+  min-width: 100px;
+  padding: 13px 16px;
   border: 1px solid rgba(231, 231, 231, 1);
 
   &::placeholder {

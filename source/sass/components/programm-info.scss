@@ -6,13 +6,15 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 61px;
     align-items: center;
-    margin-bottom: 72px;
-    padding: 0 70px;
+    margin-bottom: 76px;
+    padding: 0 51px;
   }
 
   @media (min-width: $desktop) {
+    gap: 82px;
+    width: 1220px;
     margin: 0 auto;
-    margin-bottom: 32px;
+    margin-bottom: 80px;
     padding: 0;
   }
 }
@@ -22,7 +24,9 @@
   margin-bottom: 21px;
 
   @media (min-width: $tablet) {
+    font-size: 20px;
     margin-bottom: 0;
+    padding: 16px 0;
   }
 }
 
