@@ -5,6 +5,10 @@
   @media (min-width: $tablet) {
     position: static;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 11px;
+  }
 }
 
 .other__container {
@@ -36,20 +40,27 @@
   background-color: rgba(255, 255, 255, 1);
 
   @media (min-width: $tablet) {
+    top: -24px;
+    left: 30px;
     padding: 0 37px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop) {
+    left: -37px;
   }
 }
 
 .other__list {
   @include list-reset;
   margin-bottom: 35px;
+  padding-bottom: 2px;
   border-top: $border-style-other;
   border-bottom: $border-style-other;
 
   @media (min-width: $tablet) {
-    margin-bottom: 69px;
+    margin-bottom: 66px;
     border: $border-style-other;
   }
 

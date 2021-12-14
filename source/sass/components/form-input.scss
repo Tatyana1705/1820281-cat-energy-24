@@ -14,10 +14,14 @@
   }
 }
 
+.form-input--icon .form-input__input {
+  padding-right: 50px;
+}
+
 .form-input__label {
   @include default-text-form;
   width: fit-content;
-  margin-right: 12px;
+  margin-right: 13px;
 
   @media (min-width: $tablet) {
     margin-right: 15px;
@@ -33,15 +37,49 @@
 .form-input__wrapper svg {
   position: absolute;
   top: 50%;
-  right: 10px;
+  right: 17px;
   transform: translateY(-50%);
+
+  @media (min-width: $tablet) {
+    right: 13px;
+  }
+
+  @media (min-width: $desktop) {
+    right: 18px;
+  }
 }
 
 .form-input__input {
   @include default-form-input;
   flex-grow: 1;
 
-  @media (min-width: $desktop) {
-    padding: 10px 15px;
+  @media (min-width: $tablet) {
+    padding: 10px 22px;
+  }
+
+  &:focus {
+    outline: 2px solid rgb(36, 83, 211);
+  }
+
+  &:hover {
+    border-color: rgba(205, 205, 205, 1);
+  }
+
+  &:active {
+    border-color: transparent;
+    outline: 2px solid rgba(68, 68, 68, 1);
+
+    & ~ svg {
+      stroke: $base-green;
+    }
+  }
+
+  &--error {
+    border-color: transparent;
+    outline: 2px solid rgba(255, 130, 130, 1);
+
+    & ~ svg {
+      stroke: rgba(255, 130, 130, 1);
+    }
   }
 }

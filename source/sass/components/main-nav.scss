@@ -87,11 +87,17 @@
     line-height: 30px;
 
     &--active {
-      border-bottom: 2px solid rgba(255, 255, 255, 1);
+      border-bottom: 2px solid $base-green;
     }
   }
 }
 
 .main-nav__link {
   @include default-link;
+}
+
+.main-nav__list--color .main-nav__item--active {
+  @media (min-width: $desktop) {
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+  }
 }
