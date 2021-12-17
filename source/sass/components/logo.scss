@@ -1,8 +1,9 @@
 .logo {
   @include link-reset;
   display: flex;
+  flex-grow: 1;
   align-items: center;
-  padding-top: 3px;
+  margin-right: 62px;
 
   &:hover {
     opacity: 0.8;
@@ -11,12 +12,31 @@
   &:active {
     opacity: 0.6;
   }
+
+  @media (min-width: $tablet) {
+    margin-right: 0;
+  }
 }
 
 .logo__icon {
   margin-right: 56px;
 
   @media (min-width: $tablet) {
-    margin-right: 13px;
+    width: 174px;
+    height: auto;
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 202px;
+    height: auto;
+  }
+}
+
+.logo__name {
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    display: none;
   }
 }

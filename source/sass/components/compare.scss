@@ -35,14 +35,24 @@
 
 .compare__img--left {
   @media (min-width: $tablet) {
+    top: -8px;
     left: 0;
+  }
+
+  @media (min-width: $desktop) {
+    top: -10px;
   }
 }
 
 .compare__img--right {
   @media (min-width: $tablet) {
+    top: 3px;
     right: 0;
     justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop) {
+    top: 0;
   }
 }
 
