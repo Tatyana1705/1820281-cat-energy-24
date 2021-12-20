@@ -5,6 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/32.png">
+  <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,7 +18,11 @@
   <header class="page-header">
     <div class="page-header__logo">
       <a class="logo" href="index.html">
-        <img class="logo__icon" src="img/icon-mobile.svg" width="33" height="37" alt="Кот-супергерой.">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="logo__icon" src="img/icon-mobile.svg" width="33" height="37" alt="Кот-супергерой.">
+        </picture>
         <img class="logo__name" src="img/logo.svg" width="101" height="18" alt="Кот энерджи.">
       </a>
       <button class="toggle" type="button">
@@ -45,7 +54,11 @@
           <li class="catalog__item product">
             <div class="product__wrapper">
               <a class="product__img" href="#">
-                <img src="img/chicken-mini.png" width="140" height="112" alt="Банка еды с курицей.">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/chicken-mini-desktop.png 1x, img/chicken-mini-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/chicken-mini-tablet.png 1x, img/chicken-mini-tablet@2x.png 2x">
+                  <img src="img/chicken-mini-mobile.png" srcset="img/chicken-mini-mobile@2x.png 2x" width="140" height="112" alt="Банка еды с курицей.">
+                </picture>
               </a>
               <div class="product__info">
                 <h3 class="product__title">
@@ -73,7 +86,11 @@
           <li class="catalog__item product">
             <div class="product__wrapper">
               <a class="product__img" href="#">
-                <img src="img/chicken-max.png" width="140" height="112" alt="Банка еды с курицей.">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/chicken-max-desktop.png 1x, img/chicken-max-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/chicken-max-tablet.png 1x, img/chicken-max-tablet@2x.png 2x">
+                  <img src="img/chicken-max-mobile.png" srcset="img/chicken-max-mobile@2x.png 2x" width="140" height="112" alt="Банка еды с курицей.">
+                </picture>
               </a>
               <div class="product__info">
                 <h3 class="product__title">
@@ -101,7 +118,11 @@
           <li class="catalog__item product">
             <div class="product__wrapper">
               <a class="product__img" href="#">
-                <img src="img/fish-mini.png" width="140" height="112" alt="Банка еды с рыбой.">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/fish-mini-desktop.png 1x, img/fish-mini-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/fish-mini-tablet.png 1x, img/fish-mini-tablet@2x.png 2x">
+                  <img src="img/fish-mini-mobile.png" srcset="img/fish-mini-mobile@2x.png 2x" width="140" height="112" alt="Банка еды с рыбой.">
+                </picture>
               </a>
               <div class="product__info">
                 <h3 class="product__title">
@@ -129,7 +150,11 @@
           <li class="catalog__item product">
             <div class="product__wrapper">
               <a class="product__img" href="#">
-                <img src="img/fish-max.png" width="140" height="112" alt="Банка еды с рыбой.">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/fish-max-desktop.png 1x, img/fish-max-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/fish-max-tablet.png 1x, img/fish-max-tablet@2x.png 2x">
+                  <img src="img/fish-max-mobile.png" srcset="img/fish-max-mobile@2x.png 2x" width="140" height="112" alt="Банка еды с рыбой.">
+                </picture>
               </a>
               <div class="product__info">
                 <h3 class="product__title">
@@ -157,7 +182,11 @@
           <li class="catalog__item product">
             <div class="product__wrapper">
               <a class="product__img" href="#">
-                <img src="img/buckwheat-mini.png" width="140" height="112" alt="Банка еды с гречкой.">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/buckwheat-mini-desktop.png 1x, img/buckwheat-mini-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/buckwheat-mini-tablet.png 1x, img/buckwheat-mini-tablet@2x.png 2x">
+                  <img src="img/buckwheat-mini-mobile.png" srcset="img/buckwheat-mini-mobile@2x.png 2x" width="140" height="112" alt="Банка еды с гречкой.">
+                </picture>
               </a>
               <div class="product__info">
                 <h3 class="product__title">
@@ -185,7 +214,11 @@
           <li class="catalog__item product">
             <div class="product__wrapper">
               <a class="product__img" href="#">
-                <img src="img/buckwheat-max.png" width="140" height="112" alt="Банка еды с гречкой.">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/buckwheat-max-desktop.png 1x, img/buckwheat-max-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/buckwheat-max-tablet.png 1x, img/buckwheat-max-tablet@2x.png 2x">
+                  <img src="img/buckwheat-max-mobile.png" srcset="img/buckwheat-max-mobile@2x.png 2x" width="140" height="112" alt="Банка еды с гречкой.">
+                </picture>
               </a>
               <div class="product__info">
                 <h3 class="product__title">
@@ -213,7 +246,11 @@
           <li class="catalog__item product">
             <div class="product__wrapper">
               <a class="product__img" href="#">
-                <img src="img/rice-mini.png" width="140" height="112" alt="Банка еды с рисом.">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/rice-mini-desktop.png 1x, img/rice-mini-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/rice-mini-tablet.png 1x, img/rice-mini-tablet@2x.png 2x">
+                  <img src="img/rice-mini-mobile.png" srcset="img/rice-mini-mobile@2x.png 2x" width="140" height="112" alt="Банка еды с рисом.">
+                </picture>
               </a>
               <div class="product__info">
                 <h3 class="product__title">

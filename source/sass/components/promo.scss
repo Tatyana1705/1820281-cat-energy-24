@@ -2,6 +2,7 @@
   position: relative;
   margin-bottom: 20px;
 
+  &::before,
   &::after {
     content: "";
     position: absolute;
@@ -10,6 +11,20 @@
     display: block;
     width: 100%;
     height: 63%;
+  }
+
+  &::before {
+    background-image: url("../img/index-background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -3;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
+  }
+
+  &::after {
     background-color: transparentize($base-green, 0.25);
     z-index: -2;
   }
@@ -17,7 +32,8 @@
   @media (min-width: $tablet) {
     margin-bottom: 35px;
 
-    &::after {
+    &::after,
+    &::before {
       content: none;
     }
   }
@@ -27,11 +43,20 @@
     margin-top: 20px;
     margin-bottom: 0;
 
+    &::before,
     &::after {
       content: "";
       left: 50%;
       width: 50%;
       height: 694px;
+    }
+
+    &::before {
+      background-image: url("../img/index-background-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 }
@@ -125,7 +150,7 @@
 
   @media (min-width: $tablet) {
     position: absolute;
-    bottom: 0;
+    bottom: -35px;
     left: 50%;
     transform: translateX(-50%);
     width: 709px;
@@ -135,7 +160,7 @@
   }
 
   @media (min-width: $desktop) {
-    top: 0;
+    top: -47px;
     left: 448px;
     transform: none;
     width: 552px;
