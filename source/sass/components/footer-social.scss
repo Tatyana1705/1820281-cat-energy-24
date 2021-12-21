@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 22px;
-  padding: 19px 0;
+  padding: 15px 0;
   border-top: 1px solid rgba(217, 217, 217, 1);
   border-bottom: 1px solid rgba(217, 217, 217, 1);
 
@@ -15,27 +15,53 @@
 }
 
 .footer-social__item {
-  padding: 0 16px;
+  padding: 0 13px;
+
+  @media (min-width: $tablet) {
+    padding: 0 12px;
+  }
 }
 
 .footer-social__button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 23px;
-  height: 23px;
+  width: 30px;
+  height: 30px;
+}
 
-  @media (min-width: $tablet) {
-    width: 33px;
-    height: 33px;
-  }
+.footer-social__button svg {
+  text-align: center;
+  vertical-align: middle;
+  color: rgba(102, 102, 102, 1);
 }
 
 .footer-social__button:hover svg {
-  fill: $base-green;
+  color: $base-green;
 }
 
 .footer-social__button:active svg {
-  fill: $base-green;
   opacity: 0.6;
+}
+
+
+.footer-social__button--vk svg {
+  @media (min-width: $tablet) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.footer-social__button--inst svg {
+  @media (min-width: $tablet) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.footer-social__button--fb svg {
+  @media (min-width: $tablet) {
+    width: 28px;
+    height: 33px;
+  }
 }

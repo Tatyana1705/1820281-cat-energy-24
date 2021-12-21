@@ -15,7 +15,7 @@
 }
 
 .form-input--icon .form-input__input {
-  padding-right: 50px;
+  padding-right: 40px;
 }
 
 .form-input__label {
@@ -37,12 +37,8 @@
 .form-input__wrapper svg {
   position: absolute;
   top: 50%;
-  right: 17px;
+  right: 13px;
   transform: translateY(-50%);
-
-  @media (min-width: $tablet) {
-    right: 13px;
-  }
 
   @media (min-width: $desktop) {
     right: 18px;
@@ -70,7 +66,7 @@
     outline: 2px solid rgba(68, 68, 68, 1);
 
     & ~ svg {
-      stroke: $base-green;
+      color: $base-green;
     }
   }
 
@@ -79,7 +75,7 @@
     outline: 2px solid rgba(255, 130, 130, 1);
 
     & ~ svg {
-      stroke: rgba(255, 130, 130, 1);
+      color: rgba(255, 130, 130, 1);
     }
   }
 }
