@@ -96,6 +96,7 @@
   line-height: 20px;
   text-transform: uppercase;
   padding: 7px 0;
+  background-color: transparent;
   border: none;
   border-bottom: 1px solid transparent;
 
@@ -165,6 +166,7 @@
 
 .compare__toggle {
   display: none;
+  background-color: rgba(255, 255, 255, 1);
 
   @media (min-width: $tablet) {
     position: absolute;
