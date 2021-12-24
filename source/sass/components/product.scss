@@ -52,13 +52,12 @@
   margin: auto auto;
 
   @media (min-width: $tablet) {
-    width: fit-content;
+    width: auto;
     height: 200px;
     margin-bottom: 31px;
   }
 
   @media (min-width: $desktop) {
-    width: fit-content;
     height: 196px;
     margin-bottom: 46px;
   }

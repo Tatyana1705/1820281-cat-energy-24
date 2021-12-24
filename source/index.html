@@ -10,7 +10,7 @@
   <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="no-js">
@@ -52,9 +52,9 @@
           <a class="promo__button button" href="#">подобрать программу</a>
           <div class="promo__img">
             <picture>
-              <source type="mage/webp" media="(min-width: 1280px)"
+              <source type="image/webp" media="(min-width: 1280px)"
                 srcset="img/index-can-desctop.webp 1x, img/index-can-desctop@2x.webp 2x">
-              <source type="mage/webp" media="(min-width: 768px)"
+              <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/index-can-mobile.webp 1x, img/index-can-mobile@2x.webp 2x">
               <source media="(min-width: 1280px)"
@@ -136,14 +136,20 @@
           <div class="compare__pictures">
             <div class="compare__img compare__img--show compare__img--left">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/cat-fat.png 1x, img/cat-fat@2x.png 2x">
                 <img src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" width="280" height="232"
                   alt="Толстый кот.">
               </picture>
             </div>
             <div class="compare__img compare__img--right">
-              <img class="compare__img" src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png 2x" width="280"
-                height="232" alt="Худой кот.">
+              <picture>
+                <source type="image/webp" srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x">
+                <img src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png 2x" width="280"
+                  height="232" alt="Худой кот.">
+              </picture>
             </div>
           </div>
           <div class="compare__scale">
@@ -184,7 +190,7 @@
       <ul class="footer-social">
         <li class="footer-social__item">
           <a class="footer-social__button footer-social__button--vk" href="https://www.facebook.com/htmlacademy">
-            <svg width="23" height="16">
+            <svg width="23" height="16" viewBox="0 0 23 16">
               <use href="img/sprite.svg#vk"></use>
             </svg>
             <span class="visually-hidden">Вконтакте</span>
@@ -192,7 +198,7 @@
         </li>
         <li class="footer-social__item">
           <a class="footer-social__button footer-social__button--inst" href="https://www.instagram.com/htmlacademy/">
-            <svg width="16" height="16">
+            <svg width="16" height="16" viewBox="0 0 16 16">
               <use href="img/sprite.svg#inst"></use>
             </svg>
             <span class="visually-hidden">Инстаграм</span>
@@ -200,7 +206,7 @@
         </li>
         <li class="footer-social__item">
           <a class="footer-social__button footer-social__button--fb" href="https://twitter.com/htmlacademy_ru">
-            <svg aria-hidden="true" width="22" height="22">
+            <svg width="22" height="22" viewBox="0 0 22 22">
               <use href="img/sprite.svg#fb"></use>
             </svg>
             <span class="visually-hidden">Фейсбук</span>
@@ -209,7 +215,7 @@
       </ul>
       <a class="footer-academy" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="footer-academy__text">HTML Academy</span>
-        <svg width="27" height="34">
+        <svg width="27" height="34" viewBox="0 0 27 34">
           <use href="img/sprite.svg#footer-academy__logo"></use>
         </svg>
       </a>

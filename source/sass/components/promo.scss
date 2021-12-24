@@ -154,7 +154,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 709px;
-    height: fit-content;
+    height: auto;
     margin: 0 auto;
     z-index: -1;
   }
@@ -170,6 +170,6 @@
 .promo__img img {
   display: block;
   width: 100%;
-  height: fit-content;
+  height: auto;
   margin: 0 auto;
 }
