@@ -9,9 +9,9 @@ const MAP_CENTER = { lat: 59.939, lng: 30.32 };
 const MAP_MARKER_POINT = { lat: 59.938635, lng: 30.323118 };
 
 const ICONS = {
-  [MOBILE]: "../img/map-pin-mobile.png",
-  [TABLET]: "../img/map-pin-tablet.png",
-  [DESKTOP]: "../img/map-pin-tablet.png",
+  [MOBILE]: "img/map-pin-mobile.png",
+  [TABLET]: "img/map-pin-tablet.png",
+  [DESKTOP]: "img/map-pin-tablet.png",
 };
 
 const getDevice = (width) => {
@@ -47,7 +47,7 @@ function initMap(device = current) {
 }
 
 window.addEventListener('resize', () => {
-  const device = getDevice(window.screen.width);
+  const device = getDevice(document.documentElement.clientWidth);
 
   if (device !== current) {
     initMap(device);
