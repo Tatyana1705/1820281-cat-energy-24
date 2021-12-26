@@ -21,6 +21,7 @@
 @mixin button-reset {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 @mixin link-reset {
@@ -80,6 +81,17 @@
   margin: 0;
   padding: 0;
   border: none;
+
+  &[type="number"],
+  &[type="number"]:hover,
+  &[type="number"]:focus {
+    appearance: textfield;
+  }
+
+  &[type="number"]::-webkit-outer-spin-button,
+  &[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+  }
 }
 
 @mixin default-form-input {
@@ -91,5 +103,27 @@
 
   &::placeholder {
     color: rgba(68, 68, 68, 1);
+  }
+
+  &:hover {
+    border-color: rgba(205, 205, 205, 1);
+  }
+
+  &:focus {
+    border-color: transparent;
+    outline: 2px solid rgba(68, 68, 68, 1);
+
+    & ~ svg {
+      color: $base-green;
+    }
+  }
+
+  &--error {
+    border-color: transparent;
+    outline: 2px solid rgba(255, 130, 130, 1);
+
+    & ~ svg {
+      color: rgba(255, 130, 130, 1);
+    }
   }
 }

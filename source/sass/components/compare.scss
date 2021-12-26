@@ -59,12 +59,12 @@
 .compare__img img {
   display: block;
   width: 100%;
-  height: fit-content;
+  height: auto;
   margin: 0 auto;
 
   @media (min-width: $tablet) {
     height: 100%;
-    width: fit-content;
+    width: auto;
   }
 }
 
@@ -96,6 +96,7 @@
   line-height: 20px;
   text-transform: uppercase;
   padding: 7px 0;
+  color: rgba(0, 0, 0, 1);
   background-color: transparent;
   border: none;
   border-bottom: 1px solid transparent;
