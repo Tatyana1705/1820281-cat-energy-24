@@ -3,16 +3,13 @@
   padding: 25px 0 38px 0;
 
   @media (min-width: $tablet) {
-    padding: 43px 0;
-    padding-bottom: 0;
+    padding: 0;
     background-color: transparent;
-    background-image: linear-gradient(to bottom, transparent 57%, rgba(234, 234, 234, 1) 57%, rgba(234, 234, 234, 1));
-    border-top: 1px solid rgba(230, 230, 230, 1);
+    background-image: linear-gradient(to bottom, transparent 55%, rgba(234, 234, 234, 1) 55%, rgba(234, 234, 234, 1));
   }
 
   @media (min-width: $desktop) {
-    background-image: linear-gradient(to bottom, transparent 35%, rgba(234, 234, 234, 1) 35%, rgba(234, 234, 234, 1));
-    border: none;
+    background-image: linear-gradient(to bottom, transparent 28%, rgba(234, 234, 234, 1) 28%, rgba(234, 234, 234, 1));
   }
 }
 
@@ -20,7 +17,7 @@
   @media (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
-    padding: 25px 0 7px 0;
+    padding-bottom: 70px;
   }
 }
 
@@ -78,7 +75,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet) {
     grid-template-columns: repeat(2, 162px);
@@ -103,7 +100,7 @@
 
 .example__count-item dt {
   @include default-title;
-  padding: 14px 0;
+  padding: 14px 0 16px 0;
   font-size: 24px;
   line-height: 24px;
   border: 1px solid rgba(205, 205, 205, 1);
@@ -113,6 +110,10 @@
     padding: 13px 0 17px 0;
     font-size: 30px;
     line-height: 37px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 14px 0 17px 0;
   }
 }
 

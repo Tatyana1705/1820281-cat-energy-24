@@ -3,12 +3,8 @@
 }
 
 .control-radio__label {
+  display: flex;
   align-items: center;
-  padding-left: 45px;
-
-  @media (min-width: $tablet) {
-    padding-left: 60px;
-  }
 
   &:active {
     opacity: 0.3;
@@ -25,15 +21,13 @@
 }
 
 .control-radio__mark {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   width: 30px;
   height: 30px;
+  margin-right: 15px;
   box-sizing: border-box;
   border: 2px solid rgba(205, 205, 205, 1);
   border-radius: 50%;
@@ -50,6 +44,7 @@
   @media (min-width: $tablet) {
     width: 40px;
     height: 40px;
+    margin-right: 20px;
 
     &::before {
       width: 18px;

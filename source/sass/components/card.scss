@@ -1,5 +1,5 @@
 .card {
-  padding: 13px 0 17px 0;
+  padding: 13px 0 18px 0;
   border-bottom: $border-style-other;
 
   &:last-child {
@@ -14,11 +14,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 16px 0 14px 0;
   }
 }
 
 .card__wrapper {
+  margin-bottom: 15px;
+
   @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
@@ -59,8 +61,8 @@
 .card__info {
   display: flex;
   justify-content: space-between;
-  margin: 0 0 15px 0;
   line-height: 14px;
+  margin: 0;
 
   @media (min-width: $tablet) {
     line-height: 20px;

@@ -1,9 +1,6 @@
 .checkbox-control {
-  padding-left: 45px;
-
-  @media (min-width: $tablet) {
-    padding-left: 59px;
-  }
+  display: flex;
+  align-items: center;
 
   &:active {
     opacity: 0.3;
@@ -11,12 +8,10 @@
 }
 
 .checkbox-control__mark {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
+  flex-shrink: 0;
   width: 30px;
   height: 30px;
+  margin-right: 16px;
   box-sizing: border-box;
   border: 2px solid rgba(205, 205, 205, 1);
 
@@ -30,15 +25,15 @@
   }
 
   &::before {
-    top: 4px;
-    left: 15px;
+    top: 7px;
+    left: 17px;
     height: 17px;
     transform: rotate(41deg);
   }
 
   &::after {
-    top: 10px;
-    left: 7px;
+    top: 12px;
+    left: 8px;
     height: 10px;
     transform: rotate(-45deg);
   }
@@ -46,16 +41,17 @@
   @media (min-width: $tablet) {
     width: 40px;
     height: 40px;
+    margin-right: 19px;
 
     &::before {
-      top: 6px;
-      left: 21px;
+      top: 8px;
+      left: 23px;
       height: 22px;
     }
 
     &::after {
-      top: 14px;
-      left: 10px;
+      top: 17px;
+      left: 12px;
       height: 12px;
     }
   }

@@ -12,7 +12,7 @@
 }
 
 .other__container {
-  padding-top: 43px;
+  padding-top: 42px;
   padding-bottom: 35px;
 
   @media (min-width: $tablet) {
@@ -54,7 +54,7 @@
 
 .other__list {
   @include list-reset;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   padding-bottom: 2px;
   border-top: $border-style-other;
   border-bottom: $border-style-other;

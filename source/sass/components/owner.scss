@@ -1,11 +1,11 @@
 .owner {
   @include default-fieldset;
   position: relative;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet) {
     position: static;
-    margin-bottom: 0;
+    margin-bottom: 86px;
   }
 
   @media (min-width: $desktop) {
@@ -49,7 +49,6 @@
   @media (min-width: $tablet) {
     padding: 88px 70px;
     padding-bottom: 0;
-    margin-bottom: 87px;
   }
 
   @media (min-width: $desktop) {

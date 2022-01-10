@@ -1,11 +1,13 @@
 .about-cat {
   @include list-reset;
-  margin-bottom: 21px;
-  padding: 0 20px;
+  margin-bottom: 22px;
+  padding: 0 20px 22px 20px;
+  border-bottom: 1px solid rgba(217, 217, 217, 1);
 
   @media (min-width: $tablet) {
-    margin-bottom: 72px;
+    margin-bottom: 71px;
     padding: 0 70px;
+    border: none;
   }
 
   @media (min-width: $desktop) {
